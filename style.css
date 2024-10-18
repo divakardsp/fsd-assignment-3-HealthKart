@@ -1,0 +1,493 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* font-family: Montserrat, sans-serif; jb yha pe h fomt-family instead of in the search text the fonts are not being applied and cut thrugh dikha rha h inspect mei  */
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* .header {
+    margin-left: 10.71rem;
+    margin-right: 10.71rem;
+} */
+/* bina flex k search box and image align hi nhi ho rhe the search box nicche aa rha tha image k  */
+
+.header {
+    margin-left: 10.71rem;
+    margin-right: 10.71rem;
+    display: flex;
+    align-items: center;
+}
+
+.header div {
+    position: relative;
+    display: inline-block;
+}
+
+.header div img {
+    width: 12.305rem;
+    height: 5.75rem;
+    border-radius: 50%;
+}
+
+.search-box{
+    margin-left: 5rem;
+    margin-right: 7.5rem;
+}
+
+.search-text{
+    padding: 0.7rem 2.9rem;
+    width: 32rem;
+    height: 1.8rem;
+    border-radius: 0.5rem;
+    font-family: Montserrat, sans-serif;
+    border: none;
+    background-color: #f7f7f7;
+    color: #77777e;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.search-box svg{
+    position:absolute;
+    top: 0.9rem;
+    left: 0.625rem;
+
+}
+
+.login-button{
+    padding: 0.8rem 2rem;
+    border-radius: 0.35rem;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 800;
+    border: none;
+    background-color: #00b5b7;
+    font-size: 1rem;
+}
+
+.cart{
+    margin-left: 2.5rem;
+}
+
+.nav-bar{
+    position:sticky;
+}
+
+.nav-bar ul{
+    position: relative;
+    margin-left: 10.3rem;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: black;
+   padding: 1rem;
+}
+
+.category svg{
+    position: relative;
+    left: 3rem;
+    top: 0.4rem;
+}
+
+.category-btn{
+    padding: 0.75rem 1.8rem 0.75rem 3.2rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid #dbdee9;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: #77777e;
+}
+
+
+.sellers{
+    font-family: Montserrat, sans-serrif;
+}
+
+.sellers svg{
+    position: relative;
+    left: 0.01rem;
+    top: 0.3rem;
+}
+
+.brands{
+    font-family: Montserrat, sans-serrif;
+}
+
+.brands svg{
+    position: relative;
+    top: 0.23rem;
+}
+
+.banner{
+    padding: 0.75rem 40rem;
+    width: 28rem;
+    background-color: rgb(239, 251, 252);
+    font-family: 'Montserrat', sans-serif;
+    color: #212121;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #dbdee9;
+    padding-bottom: 0.5rem;
+}
+.slider {
+    display: flex;
+    width: 500%; 
+    animation: slide 15s infinite; /* 5s per slide */
+}
+.slide {
+    width: 20%; /* 100% / 5 slides */
+}
+.slide img {
+    width: 100%;
+    height: auto;
+}
+@keyframes slide {
+    0%, 17% { transform: translateX(0); }
+    20%, 37% { transform: translateX(-20%); }
+    40%, 57% { transform: translateX(-40%); }
+    60%, 77% { transform: translateX(-60%); }
+    80%,97% { transform: translateX(-80%); }
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.5);
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+    position: absolute;
+    bottom: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.deals-container{
+    padding: 2rem 10.71rem 1rem 10.71rem;
+    background-color: white;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #212121;
+}
+.head a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #00b5b7;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.product{
+    width: 24%;
+    height: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product>img{
+    width: 100%;
+    height: auto; 
+}
+
+.product-description{
+    padding: 1rem;
+    border: 1px solid #dbdee9;
+    border-top: none
+}
+
+.product-review div{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    display: inline;
+}
+
+.ratings{
+    background-color: #00b5b7;
+    color: white;
+    padding: 0.3rem;
+    margin-right: 0.9rem;
+    border-radius: 5%;
+}
+.ratings img{
+    margin-left: 0.2rem;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+.product-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212121;
+    margin-top: 0.7rem;
+}
+
+.product-price{
+    margin-top: 0.5rem;
+}
+
+.product-price div{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 0.5rem;
+}
+
+.price{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.old-price{
+    color: #77777e;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+
+.discount{
+    color:#00a856;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.premium-price{
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+    background-color: #f5f5f5;
+}
+
+.premium-price span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.addToCart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.cart-btn{
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.7rem 4.2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff8914;
+    color: #ff8914 !important;
+    background: #fff9f4;
+}
+
+.cart-btn img{
+    margin-right: 0.5rem;
+}
+
+.banner-container{
+    padding: 1.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-container img{
+    width: 24%;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+.brands-container{
+    padding: 2rem 10.71rem 1rem 10.71rem;
+    background-color: white;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;   
+}
+
+.reasoning{
+    padding: 2rem 10.71rem 1rem 10.71rem;
+    background-color: white;
+}
+.reasons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.reasons img{
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+.reasons div{
+    font-family: "Montserrat", sans-serif;
+}
+
+.reasons div p{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #77777e;
+}
+
+.footer {
+    background-color: #1a2a2d;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer logo{
+    width: 200px;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.contact-info {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.subscribe-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    color:#1a2a2d
+}
+.subscribe-form h3{
+    color: #1a2a2d;
+}
+.subscribe-form input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.subscribe-form button {
+    background-color: #00a8a8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.app-download{
+    display: flex;
+    justify-content: space-evenly;
+}
+.app-download img {
+    height: 40px;
+    margin-right: 10px;
+}
+.bottom-footer {
+    margin-top: 30px;
+    border-top: 1px solid #2a3a3d;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.payment-methods img {
+    height: 30px;
+    margin-right: 10px;
+}
